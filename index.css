@@ -13,7 +13,7 @@ html, html body {
   font-weight: 400;
   font-size: 1.2em;
   margin: auto;
-  padding-top: 30px;   
+  padding-top: 30px;
 }
 
 .btn {
@@ -24,8 +24,8 @@ html, html body {
   border: 0;
   border-bottom: 2px solid #3a3a3a;
   color: #e2e2e2;
-  transition: 0.2s ease-in;
-  border-radius: 5px;
+  transition: 0.15s ease-in;
+  border-radius: 10px;
 }
 .btn:hover {
   cursor: pointer;
@@ -38,6 +38,7 @@ html, html body {
   background :#3a3a3a;
   padding: 10px;
   margin-top: 50px;
+  margin-bottom: 30px;
   border-radius: 10px;
 }
 .card__content {
@@ -49,6 +50,6 @@ html, html body {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.card__chamption {
-  font-size: 1.5em;
+.card__champion_underlined {
+  text-decoration: underline;
 }

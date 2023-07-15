@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+  .container, .btn {
+    max-width: calc(100vw - 10px);
+    font-size: 1em;
+  }
+
+  .container {
+    padding-top: 0;
+  }
+  .card__maptitle {
+    font-size: 1.2em;
+  }
+  .btn {
+    position: fixed;
+    bottom: 10px;
+
+  }
+}

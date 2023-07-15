@@ -36,7 +36,7 @@ const rngMapAndChampions = {
                           this.championsList[this.getRngNum(this.championsList.length)]);
 
     mapElement.innerHTML = this.chosenSetup[0];
-    champion1Element.innerHTML = 'Left podium plays on: ' + this.chosenSetup[1];
-    champion2Element.innerHTML = 'Right podium plays on: ' + this.chosenSetup[2];
+    champion1Element.innerHTML = this.chosenSetup[1];
+    champion2Element.innerHTML = this.chosenSetup[2];
   }
 }

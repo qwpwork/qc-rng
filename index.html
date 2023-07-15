@@ -5,21 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./adaptive-less-500px.css">
   <title>QC randomizer</title>
 </head>
 <body>
   <main class="container">
     <div class="row">
-      <button class="btn" id="btn-submiter">Generate match</button>
-    </div>
-    <div class="row">
       <div class="card">
         <div class="card__content">
           <p class="card__maptitle" id="map"></p>
-          <p class="card__champion" id="champion1"></p>
-          <p class="card__champion" id="champion2"></p>
+          <p class="card__champion">
+            Left podium plays on: <span class="card__champion_underlined" id="champion1"></span>
+          </p>
+          <p class="card__champion">
+            Right podium plays on: <span class="card__champion_underlined" id="champion2"></span>
+          </p>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <button class="btn" id="btn-submiter">Generate match</button>
     </div>
   </main>
   <script src="./script.js"></script>
