@@ -1,0 +1,54 @@
+html, html body {
+  background: #222;
+  color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.container, .btn {
+  width: 500px;
+}
+
+.container {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: auto;
+  padding-top: 30px;   
+}
+
+.btn {
+  padding: 10px 0 10px 0;
+  display: block;
+  background: #3a3a3a;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #3a3a3a;
+  color: #e2e2e2;
+  transition: 0.2s ease-in;
+  border-radius: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.card {
+  background :#3a3a3a;
+  padding: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.card__content {
+  margin-left: 20px;
+}
+.card__maptitle {
+  font-weight: 700;
+  font-size: 2em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.card__chamption {
+  font-size: 1.5em;
+}
