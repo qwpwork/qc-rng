@@ -4,8 +4,11 @@ html, html body {
   min-height: 100vh;
 }
 
-.container, .btn {
+.btn {
   width: 500px;
+}
+.main-container {
+  padding-top: 30px;
 }
 
 .container {
@@ -13,12 +16,12 @@ html, html body {
   font-weight: 400;
   font-size: 1.2em;
   margin: auto;
-  padding-top: 30px;
 }
 
 .btn {
   padding: 10px 0 10px 0;
   display: block;
+  margin: auto;
   background: #3a3a3a;
   outline: none;
   border: 0;
@@ -40,6 +43,8 @@ html, html body {
   margin-top: 50px;
   margin-bottom: 30px;
   border-radius: 10px;
+  display: inline-block;
+  min-width: 300px;
 }
 .card__content {
   margin-left: 20px;
@@ -52,4 +57,34 @@ html, html body {
 }
 .card__champion_underlined {
   text-decoration: underline;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px; 
+}
+.nav__link {
+  text-decoration: none;
+  color: #f2f2f2;
+  padding: 5px 20px;
+}
+.nav__link_active {
+  border-bottom: 3px solid #f2f2f2;
+}
+.row {
+  display: block;
+}
+@media (min-width: 500px) {
+  .card {
+    min-width: 300px;
+    padding-right: 20px;
+  }
+  .main-container {
+    width: calc(100vw - 1.2em);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+  }
 }

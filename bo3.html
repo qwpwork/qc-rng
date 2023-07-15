@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,43 @@
   <link rel="stylesheet" href="./adaptive-less-500px.css">
   <title>QC randomizer</title>
 </head>
+
 <body>
   <header>
     <nav class="nav container">
-      <span class="nav__link nav__link_active">Best of 1</span>
-      <a class="nav__link" href="./bo3.html">Best of 3</a>
+      <a class="nav__link" href="./index.html">Best of 1</a>
+      <span class="nav__link nav__link_active">Best of 3</span>
       <a class="nav__link" href="./bo5.html">Best of 5</a>
       <a class="nav__link" href="https://github.com/qwpwork/qc-rng" target="_blank">Source code</a>
     </nav>
   </header>
   <main class="container main-container">
+    <div class="row">
+      <div class="card">
+        <div class="card__content">
+          <p class="card__maptitle" id="map"></p>
+          <p class="card__champions">
+            Left podium plays on: <span class="card__champion card__champion_underlined" id="champion1"></span>
+          </p>
+          <p class="card__champions">
+            Right podium plays on: <span class="card__champion card__champion_underlined" id="champion2"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card">
+        <div class="card__content">
+          <p class="card__maptitle" id="map"></p>
+          <p class="card__champions">
+            Left podium plays on: <span class="card__champion card__champion_underlined" id="champion1"></span>
+          </p>
+          <p class="card__champions">
+            Right podium plays on: <span class="card__champion card__champion_underlined" id="champion2"></span>
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="card">
         <div class="card__content">
@@ -37,4 +65,5 @@
   </div>
   <script src="./script.js"></script>
 </body>
+
 </html>

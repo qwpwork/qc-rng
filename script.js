@@ -1,7 +1,7 @@
 const btnsubmiter      = document.getElementById('btn-submiter'),
-      mapElement       = document.getElementById('map'),
-      champion1Element = document.getElementById('champion1'),
-      champion2Element = document.getElementById('champion2');
+      mapElement       = document.getElementsByClassName('card__maptitle'),
+      championsElement = document.getElementsByClassName('card__champion');
+      // champion2Element = document.getElementById('champion2');
 
 window.addEventListener('load', function(){
   rngMapAndChampions.setupInit();
@@ -30,13 +30,13 @@ const rngMapAndChampions = {
   },
 
   setupInit() {
-    this.chosenSetup = [];
-    this.chosenSetup.push(this.mapList[this.getRngNum(this.mapList.length)],
-                          this.championsList[this.getRngNum(this.championsList.length)],
-                          this.championsList[this.getRngNum(this.championsList.length)]);
-
-    mapElement.innerHTML = this.chosenSetup[0];
-    champion1Element.innerHTML = this.chosenSetup[1];
-    champion2Element.innerHTML = this.chosenSetup[2];
+    for (let i = 0; i < mapElement.length; i++) {
+      mapElement[i].innerHTML = this.mapList[this.getRngNum(this.mapList.length)];
+    }
+    for (let i = 0; i < championsElement.length; i += 2) {
+      championsElement[i].innerHTML = this.championsList[this.getRngNum(this.championsList.length)];
+      championsElement[i + 1].innerHTML = this.championsList[this.getRngNum(this.championsList.length)];
+    }
+    
   }
 }
