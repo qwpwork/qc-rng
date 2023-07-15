@@ -1,18 +1,29 @@
 @media (max-width: 500px) {
+
   .container, .btn {
-    max-width: calc(100vw - 10px);
+    max-width: calc(100vw - 50px);
     font-size: 1em;
   }
-
+  .row {
+    margin: 0;
+  }
+  .card {
+    margin: 10px auto;
+    display: block;
+  }
   .container {
     padding-top: 0;
+    
+  }
+  .main-container {
+    margin-bottom: 20px;
   }
   .card__maptitle {
     font-size: 1.2em;
   }
   .btn {
-    position: fixed;
-    bottom: 10px;
-
+    border: 2px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
   }
 }

@@ -79,6 +79,8 @@ html, html body {
   .card {
     min-width: 300px;
     padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .main-container {
     width: calc(100vw - 1.2em);
