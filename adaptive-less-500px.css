@@ -10,6 +10,7 @@
   .card {
     margin: 10px auto;
     display: block;
+    min-width: 250px;
   }
   .container {
     padding-top: 0;

@@ -44,7 +44,7 @@ html, html body {
   margin-bottom: 30px;
   border-radius: 10px;
   display: inline-block;
-  min-width: 300px;
+  
 }
 .card__content {
   margin-left: 20px;
@@ -77,7 +77,7 @@ html, html body {
 }
 @media (min-width: 500px) {
   .card {
-    min-width: 250px;
+    min-width: 300px;
     padding-right: 20px;
     margin-left: 5px;
     margin-right: 5px;
