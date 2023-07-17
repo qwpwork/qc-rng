@@ -15,8 +15,7 @@ window.addEventListener('load', function(){
 });      
 
 window.addEventListener('keyup', function(event) {
-  const isKeyInListeningList = (event.code === 'Space') || (event.code === 'Enter') ||
-                                                           (event.code === 'R'); 
+  const isKeyInListeningList = (event.code === 'Space') || (event.code === 'Enter'); 
   if (isKeyInListeningList) {
     rngMapAndChampions.setupInit();
   }
