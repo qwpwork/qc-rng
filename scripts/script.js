@@ -42,13 +42,9 @@ const rngMapAndChampions = {
       this.mapList.splice(this.currentRngNum, 1);
     }
 
-    for (let i = 0; i < championsElement.length; i += 2) {
+    for (let i = 0; i < championsElement.length; i++) {
       this.currentRngNum = this.getRngNum(this.championsList.length);
       championsElement[i].innerHTML = this.championsList[this.currentRngNum];
-      this.championsList.splice(this.currentRngNum, 1);
-
-      this.currentRngNum = this.getRngNum(this.championsList.length);
-      championsElement[i + 1].innerHTML = this.championsList[this.currentRngNum];
       this.championsList.splice(this.currentRngNum, 1);
     }
     this.resetUsedElements();
