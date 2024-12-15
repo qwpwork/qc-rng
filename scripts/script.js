@@ -4,7 +4,7 @@ const immutableChampionsList = ['Anarki', 'Athena', 'B.J. Blazkowicz', 'Clutch',
 
 const immutableMapList = ['Awoken', 'Blood Covenant', 'Blood Run', 'Corrupted Keep', 'Crucible',
                           'Deep Embrace', 'Insomnia', 'Molten Falls', 'Ruins of Sarnath',
-                          'Vale of Pnath', 'Vestibule of Exile'];
+                          'Vale of Pnath', 'Vestibule of Exile', 'Tower of Koth', 'Tempest shrine'];
 
 const btnsubmiter      = document.getElementById('btn-submiter'),
       mapElement       = document.getElementsByClassName('card__maptitle'),
