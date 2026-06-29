@@ -1,11 +1,5 @@
-## **Quake match randomizer**
+# Vue 3 + Vite
 
-This program sugests a random map and two champions for the map.
-Program have responsive layout for mobile devices.
+This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-When the program creates maps and champions, **_the program will not duplicate champions and maps_**.
-This program has the following options:
-
-1.  Best of 1.
-2.  Best of 3.
-3.  Best of 5.
+Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).

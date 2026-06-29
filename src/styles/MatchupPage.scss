@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Kairos Sans W1G';
+  src: url('./../assets/fonts/kairossansw1g-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; /* Ускоряет отображение текста до загрузки шрифта */
+}
+
+body, html, #app {
+  color: #fff;
+  font-family: 'Kairos Sans W1G', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #16161a;
+}
+.container {
+  max-width: 1128px;
+}
+
+.btnbox__btn {
+  color: #fff;
+}
+
+.block__header {
+  font-size: 48px;
+}
+
+.card{
+  color: #fff;
+  position: relative;
+  user-select: none;
+  &__map-img{
+    display: block;
+    filter: brightness(60%);
+    // max-height: 198px;
+  }
+  &__overlay{
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 1;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  &__map-name{
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  &__champions-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    max-width: 514px; 
+    @media (max-width: 767px){
+      margin-top: auto;
+    }
+  }
+  &__champion{
+    padding: 0;
+    &:first-of-type{
+      border: 2px solid #b12027;
+    }
+    &:last-of-type{
+      border: 2px solid #2c4ac0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__vs{
+    // display: block;
+    font-size: 64px;
+    line-height: 1;
+    align-self: center;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+.btnbox{
+  &__btn{
+    border: 0;
+    height: 40px;
+    font-size: 14px;
+    padding: 0;
+    transition: ease-in-out 0.2s;
+    &:first-of-type{
+      background-color: #7d161c;
+      &:hover {
+        background-color: #b12027;
+      }
+    }
+    &:last-of-type{
+      background-color: #233c9e;
+      &:hover {
+        background-color: #2c4ac0;
+      }
+    }
+  }
+}
+
+.generate-btnbox-grid {
+  
+  width: 100%;
+  margin: 24px 0;
+
+  &__btn {
+    border: 0;
+    padding: 11px 0; 
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    background-color: #7d161c;
+    &:hover {
+      background-color: #b12027;
+    }
+    @media (max-width: 767px) {
+      max-width: 356px;
+    }
+  }
+}
+
+//Matchup-card-adaptive
+
+// .card{
+//   width: 356px;
+ 
+//   @media (min-width: 767px) {
+//     margin-right: 0px;
+//   }
+//   &__champions-block{
+//     width: 320px;
+//   }
+// }
+// .btnbox{
+//   width: 356px;
+//   &__btn{
+//     width: 178px;
+//   }
+// }
