@@ -1,24 +1,17 @@
-/*
-1. Склонировать массив карт и чемпионов из иммутабельного массива
-2. Вычесть забаненные карты
-3. Сгенерировать 3 карты, при этом сделать так, чтоб не было дубликатов
-4. Сгенерировать 6 чемпионов для 3 карт, также без дубликатов
-*/
-
 const MatchupManager = {
   IMMUTABLE_MAPS_LIST: [
-    { id: 0, name: 'Awoken', img: './maps-preview/awoken.svg' },
-    { id: 1, name: 'DM6', img: './maps-preview/dm6.svg' },
-    { id: 2, name: 'ZTN', img: './maps-preview/ztn.svg' },
-    { id: 3, name: 'Corrupted', img: './maps-preview/ck.svg' },
-    { id: 4, name: 'Crucible', img: './maps-preview/crucible.svg' },
-    { id: 5, name: 'Deep Embrace', img: './maps-preview/de.svg' },
-    { id: 6, name: 'Insomnia', img: './maps-preview/insomnia.svg' },
-    { id: 7, name: 'Molten', img: './maps-preview/molten.svg' },
-    { id: 8, name: 'Ruins', img: './maps-preview/ruins.svg' },
-    { id: 9, name: 'Vale', img: './maps-preview/vale.svg' },
-    { id: 10, name: 'Exile', img: './maps-preview/exile.svg' },
-    { id: 11, name: 'Koth', img: './maps-preview/koth.svg' }
+    { id: 0, name: 'Awoken', img: './maps-preview/awoken.webp' },
+    { id: 1, name: 'DM6', img: './maps-preview/dm6.webp' },
+    { id: 2, name: 'ZTN', img: './maps-preview/ztn.webp' },
+    { id: 3, name: 'Corrupted', img: './maps-preview/ck.webp' },
+    { id: 4, name: 'Crucible', img: './maps-preview/crucible.webp' },
+    { id: 5, name: 'Deep Embrace', img: './maps-preview/de.webp' },
+    { id: 6, name: 'Insomnia', img: './maps-preview/insomnia.webp' },
+    { id: 7, name: 'Molten', img: './maps-preview/molten.webp' },
+    { id: 8, name: 'Ruins', img: './maps-preview/ruins.webp' },
+    { id: 9, name: 'Vale', img: './maps-preview/vale.webp' },
+    { id: 10, name: 'Exile', img: './maps-preview/exile.webp' },
+    { id: 11, name: 'Koth', img: './maps-preview/koth.webp' }
   ],
   IMMUTABLE_CHAMPIONS_LIST: [
     { id: 0, name: 'Anarki', img: './char-portraits/anarki.svg' },
