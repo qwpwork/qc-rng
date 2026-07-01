@@ -10,7 +10,7 @@
 						:src="redChampImg"
 						@click="$emit('reroll-red-champ')"
 					>
-					<span class="card__vs col-sm-4">vs</span>
+					<span class="card__vs col-4 col-sm-4">vs</span>
 					<img
 						class="card__champion col-4 col-md-4 col-lg-4"
 						draggable="false"

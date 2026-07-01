@@ -55,6 +55,9 @@ body, html, #app {
     align-items: center;
     margin-left: 0;
     max-width: 514px; 
+    @media (max-width: 598px) {
+      justify-content: start;
+    }
     @media (max-width: 767px){
       margin-top: auto;
     }
@@ -69,6 +72,9 @@ body, html, #app {
     }
     &:hover {
       cursor: pointer;
+    }
+    @media (max-width: 598px) {
+      width: 100px;
     }
   }
   &__vs{
@@ -125,22 +131,3 @@ body, html, #app {
     }
   }
 }
-
-//Matchup-card-adaptive
-
-// .card{
-//   width: 356px;
- 
-//   @media (min-width: 767px) {
-//     margin-right: 0px;
-//   }
-//   &__champions-block{
-//     width: 320px;
-//   }
-// }
-// .btnbox{
-//   width: 356px;
-//   &__btn{
-//     width: 178px;
-//   }
-// }
