@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="card">
+		<div class="card mt-1">
 			<div class="card__overlay">
 				<p class="card__map-name">{{mapName}}</p>
 				<div class="card__champions-block row">

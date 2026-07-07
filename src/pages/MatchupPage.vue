@@ -2,7 +2,7 @@
   <div class="container">
     <div class="block ">
       <p class="block__header mt-4">Matchups</p>
-      <div class="row mt-4 justify-content-center justify-content-lg-start">
+      <div class="row justify-content-center justify-content-lg-start">
         <div
           class="col-12 col-md-6 col-lg-4"
           v-for="(map, index) in currentMaps"
@@ -19,7 +19,7 @@
           />
         </div>
         <div class="generate-btnbox-grid mt-4">
-          <button class="col-12 mb-3 generate-btnbox-grid__btn" @click="copyToClipboard()">
+          <button class="col-12 col-md-12 mb-3 generate-btnbox-grid__btn" @click="copyToClipboard()">
             copy result string
           </button>
           <button class="col-12 generate-btnbox-grid__btn" @click="generateMatchup()">
