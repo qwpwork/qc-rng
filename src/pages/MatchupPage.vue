@@ -49,7 +49,6 @@
   import { onMounted, ref } from 'vue';
   import MatchupCard from "../components/MatchupCard.vue"
   import MapCard from "../components/MapCard.vue";
-  import Popup from "../components/Popup.vue";
 
   import MatchupManager from "./../utils/matchupManager.js";
 
