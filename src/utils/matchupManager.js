@@ -1,17 +1,17 @@
 const MatchupManager = {
   IMMUTABLE_MAPS_LIST: [
     { id: 0, name: 'Awoken', img: './maps-preview/awoken.webp' },
-    { id: 1, name: 'DM6', img: './maps-preview/dm6.webp' },
-    { id: 2, name: 'ZTN', img: './maps-preview/ztn.webp' },
-    { id: 3, name: 'Corrupted', img: './maps-preview/ck.webp' },
+    { id: 1, name: 'Blood covenant', img: './maps-preview/dm6.webp' },
+    { id: 2, name: 'Blood run', img: './maps-preview/ztn.webp' },
+    { id: 3, name: 'Corrupted keep', img: './maps-preview/ck.webp' },
     { id: 4, name: 'Crucible', img: './maps-preview/crucible.webp' },
     { id: 5, name: 'Deep Embrace', img: './maps-preview/de.webp' },
     { id: 6, name: 'Insomnia', img: './maps-preview/insomnia.webp' },
-    { id: 7, name: 'Molten', img: './maps-preview/molten.webp' },
-    { id: 8, name: 'Ruins', img: './maps-preview/ruins.webp' },
-    { id: 9, name: 'Vale', img: './maps-preview/vale.webp' },
-    { id: 10, name: 'Exile', img: './maps-preview/exile.webp' },
-    { id: 11, name: 'Koth', img: './maps-preview/koth.webp' }
+    { id: 7, name: 'The Molten falls', img: './maps-preview/molten.webp' },
+    { id: 8, name: 'Ruins of Sarnath', img: './maps-preview/ruins.webp' },
+    { id: 9, name: 'Vale of Pnath', img: './maps-preview/vale.webp' },
+    { id: 10, name: 'Vestibule of Exile', img: './maps-preview/exile.webp' },
+    { id: 11, name: 'Tower of Koth', img: './maps-preview/koth.webp' }
   ],
   IMMUTABLE_CHAMPIONS_LIST: [
     { id: 0, name: 'Anarki', img: './char-portraits/anarki.svg' },

@@ -28,7 +28,6 @@ body, html, #app {
   &__map-img{
     display: block;
     filter: brightness(60%);
-    // max-height: 198px;
   }
   &__overlay{
     position: absolute;
@@ -44,6 +43,7 @@ body, html, #app {
     line-height: 40px;
     margin-top: 20px;
     text-transform: uppercase;
+    text-wrap: nowrap;
   }
   &__champions-block{
     display: flex;
@@ -74,7 +74,6 @@ body, html, #app {
     }
   }
   &__vs{
-    // display: block;
     font-size: 64px;
     line-height: 1;
     align-self: center;
@@ -173,6 +172,5 @@ body, html, #app {
     margin: auto;
     z-index: 1;
     width: inherit;
-    
   }
 }
