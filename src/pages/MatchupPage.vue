@@ -1,15 +1,15 @@
 <template>
   <div class="container">
-    <div class="block">
-      <p class="block__header">Matchups</p>
-      <div class="row mt-4 mb-4 justify-content-center justify-content-lg-start">
+    <div class="block ">
+      <p class="block__header mt-4">Matchups</p>
+      <div class="row mt-4 justify-content-center justify-content-lg-start">
         <div
           class="col-12 col-md-6 col-lg-4"
           v-for="(map, index) in currentMaps"
           :key="map.id"
         >
           <MatchupCard
-            class="mx-auto mx-lg-0 mb-4"
+            class="mx-auto mx-lg-0"
             :mapName="map.name"
             :mapImg="map.img"
             :redChampImg="currentChampions[index * 2]?.img"
@@ -30,8 +30,8 @@
       
     </div>
     <div class="block">
-      <p class="block__header">Maps ban</p>
-      <div class="row" >
+      <p class="block__header mt-4">Maps ban</p>
+      <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12" v-for="map in MatchupManager.IMMUTABLE_MAPS_LIST" :key="map.id">
           <MapCard
             
