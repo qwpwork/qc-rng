@@ -1,6 +1,18 @@
 <template>
-	<div class="mapcard" @click="toggleClick()">
-    <p class="mapcard__name">[ {{ mapName }} ]</p>
+	<div 
+    class="mapcard"
+    :class="{ 'mapcard_error': isError }"
+    @click="toggleClick()"
+    @mouseleave="isError = false"
+  >
+    <div class="mapcard__name-container">
+      <p v-if="isError" class="mapcard__name mapcard__name_error">
+        Can't ban. <br> Keep 3 maps min
+      </p>
+      <p v-else class="mapcard__name">
+        [ {{ mapName }} ]
+      </p>
+    </div>
     <div class="mapcard__img-block" :class="{ 'mapcard__img-block_banned': isBanned }">
       <img class="mapcard__img" draggable="false" :src="mapImg">
     </div>
@@ -11,7 +23,8 @@
   import MatchupManager from './../utils/matchupManager'
 	const props = defineProps(['mapName', 'mapImg']);
 
-  const isBanned = ref(false)
+  const isBanned = ref(false);
+  const isError = ref(false);
 
   const foundMap = () => {
     return MatchupManager.IMMUTABLE_MAPS_LIST.find(map => map.name === props.mapName);
@@ -29,7 +42,7 @@
         isBanned.value = true;
       }
       else {
-        alert ("Бан невозможен, в противном случае карт будет недостаточно для бо3")
+        isError.value = true;
       }
     }
     else {
@@ -38,7 +51,6 @@
       MatchupManager.removeMapFromBlacklist(clickedMap)
       isBanned.value = false;
     }
-    console.log(MatchupManager.mapsBlacklist)
   }
     
 </script>

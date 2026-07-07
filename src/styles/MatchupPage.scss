@@ -12,6 +12,7 @@ body, html, #app {
   margin: 0;
   padding: 0;
   background-color: #16161a;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1128px;
@@ -172,5 +173,19 @@ body, html, #app {
     margin: auto;
     z-index: 1;
     width: inherit;
+    &-container {
+      width: 100%;
+    }
   }
+}
+
+.mapcard.mapcard_error .mapcard__name_error {
+  text-shadow: 
+    0 0 4px #ff1a1a,
+    0 0 10px #ff3333,
+    0 0 20px rgba(255, 51, 51, 0.8);
+}
+
+.mapcard.mapcard_error .mapcard__img {
+  filter: brightness(10%) !important;
 }
